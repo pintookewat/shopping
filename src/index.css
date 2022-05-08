@@ -1,0 +1,300 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cartsnav {
+  position: absolute;
+  right: 0.5rem;
+}
+
+h5 {
+  color: blueviolet;
+  text-shadow: .1rem .1rem .4rem lightgreen;
+  font-size: 1.6rem !important;
+}
+
+.home_btn {
+
+  text-decoration: none;
+  padding: 1.7rem;
+}
+
+.card {
+  border: none;
+  float: left;
+  margin: 2%;
+  transition: all .2s ease;
+  height: auto;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: .4rem .1rem .4rem .1rem gray;
+}
+
+.card-img-top {
+
+  height: 13rem;
+}
+
+.shop_btn {
+  padding: .1rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+
+.shop_btn:hover {
+  background-color: white;
+  color: blue;
+  border: .1rem blue solid;
+}
+
+.see_btn {
+  padding: .1rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding-left: 5.01rem;
+  padding-right: 5.01rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+
+.see_btn:hover {
+  background-color: white;
+  color: blue;
+  border: .1rem blue solid;
+}
+
+
+.cart_btn {
+  padding: .1rem;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+
+.cart_btn:hover {
+  background-color: white;
+  color: red;
+  border: .1rem red solid;
+}
+
+
+.checkout_btn {
+  padding: .1rem;
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+
+
+.checkout_btn:hover {
+  background-color: white;
+  color: purple;
+  border: .1rem purple solid;
+}
+
+/* addbtn */
+
+
+.cart_btn_sub {
+  padding: .1rem;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+  margin-top: .3rem;
+}
+.cart_btn_sub:hover {
+  background-color: white;
+  color: red;
+ 
+}
+
+.cart_btn-add {
+  margin-top: .3rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+.cart_btn-add:hover {
+  background-color: white;
+  color: blue;
+ 
+}
+
+
+
+.cart-empty {
+  font-size: 3rem;
+  margin-top: 8rem;
+  color: grey;
+  text-shadow: .1rem .1rem .2rem gray;
+  animation: moving 1s infinite;
+  transition: all 1s ease-in;
+
+}
+
+
+@keyframes moving {
+  0% {
+    margin-top: 8rem;
+    transform: scale(1);
+  }
+
+  25% {
+    margin-top: 8.3rem;
+    transform: scale(1.01);
+  }
+
+  50% {
+    margin-top: 8.6rem;
+    transform: scale(1.02);
+  }
+
+  100% {
+    margin-top: 8rem;
+    transform: scale(1);
+  }
+
+}
+
+.cart_btn {
+  padding: .1rem;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: .4rem;
+  transition: all .3s ease;
+}
+
+.cart_btn:hover {
+  background-color: white;
+  color: red;
+  border: .1rem red solid;
+}
+
+.total {
+  left: 30rem;
+}
+
+
+/* products detail */
+.prodetail img {
+  height: 20rem;
+  transition: all .4s ease;
+  margin-left: 4rem;
+}
+
+.prodetail img:hover {
+  transform: scale(1.05)
+}
+
+.prodetailtitle {
+  color: gray;
+  text-transform: uppercase;
+}
+
+.prodetailprice {
+  color: gray;
+
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width:980px) {
+
+  html {
+    font-size: 100%;
+  }
+
+  .card {
+    margin-left: 4rem;
+
+  }
+}
+
+@media only screen and (max-width:780px) {
+
+  html {
+    font-size: 100%;
+  }
+
+  .card {
+    margin-left: 4rem;
+
+  }
+}
+
+@media only screen and (max-width:480px) {
+
+  html {
+    font-size: 80%;
+  }
+
+  .cartsnav {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .card {
+    margin-left: 7rem;
+
+  }
+
+  .prodetail img {
+    height: 9rem;
+    transition: all .4s ease;
+
+
+  }
+
+  .prodetailtitle {
+    font-size: 1rem;
+    color: gray;
+    text-transform: uppercase;
+  }
+
+  .prodetailprice {
+    font-size: 1rem;
+    color: gray;
+
+  }
+
+  .shop_btn {
+    text-decoration: none;
+    padding-left: 4.7rem;
+    padding-right: 4.7rem;
+
+  }
+
+
+
+}
