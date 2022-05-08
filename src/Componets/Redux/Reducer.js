@@ -6,21 +6,22 @@ const initalState = {
 const ProductCart = (state = initalState, action) => {
     switch (action.type) {
         case "ADD_PRODUCTS":
-            // const indexof = state.Cart.findIndex((items) => items.id = action.payload.id)
-            // if (indexof >= 0) {
+            const present = state.Cart.findIndex((items) => items.id === action.payload.id);
+            if (present >= 0) {
+                alert("Products already in Cart")
+                return {
+                    ...state,
+                    Cart: [...state.Cart]
 
-            //     return {
-            //         ...state,
-            //         Cart: [...state.Cart]
-
-            //     };
-
-            // }
+                };
+            }
             return {
                 ...state,
                 Cart: [...state.Cart, action.payload]
 
             };
+
+
 
 
         case "REMOVE_PRODUCTS":
